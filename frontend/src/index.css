@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-textshadow:hover {
+  text-shadow: 0 10px 15px rgb(248, 3, 228);
+}
+.bg-light-dark {
+  background-color: rgba(0, 0, 0, 0.884);
+}
+
+.bg-img {
+  background-image: url("https://cdn.pixabay.com/photo/2020/05/28/15/56/digitization-5231610_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+.menus nav ul a {
+  /* color: aqua; */
+  opacity: 0.5;
+}
+.menus nav ul a.active {
+  opacity: 1;
+  /* text-shadow: 0 10px 15px rgba(56, 3, 248, 0.541); */
+}
+.tran {
+  transition: all 1s;
+}
+.shadows {
+  box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.445);
+}
+.user-profile-list,
+.postscontainer,
+.profile {
+  display: none;
+}
+
+.user-profile-image:hover .user-profile-list,
+.postspage:hover .postscontainer,
+.profileImg:hover .profile {
+  display: flex;
+}
+.gridcols {
+  grid-template-columns: .7fr 1.4fr 1fr .5fr .5fr;
+}
+.gridcols-user {
+  grid-template-columns: .7fr 1.4fr 1fr .5fr .5fr .5fr;
+}
+.admin-routes a.active {
+  color: white;
+  background-color: rgb(56, 56, 56);
+}
+
+
+@media (max-width:805px){
+
+  .single-post{
+    width: 250px;
+  }
+}
+@media (max-width:805px){
+
+  .single-post{
+    width: 300px;
+  }
+}
+@media (max-width:640px){
+
+  .single-post{
+    width: 250px;
+  }
+}
+@media (max-width:535px){
+
+  .single-post{
+    width: 90vw;
+  }
+}
+@media (max-width:535px){
+
+  .single-post-img{
+    width: 90vw;
+  }
+}
+
+.bg-image{
+  background-image: url('photo-1499951360447-b19be8fe80f5.avif');
+  height: 300px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
